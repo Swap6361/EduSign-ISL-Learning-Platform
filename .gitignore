@@ -40,6 +40,12 @@ build/
 *.pth
 *.onnx
 
+# TensorFlow SavedModel format
+saved_model.pb
+variables/
+*/variables/
+**/variables/
+
 # ==========================================
 # FIREBASE & SECRETS (CRITICAL - SECURITY)
 # ==========================================
