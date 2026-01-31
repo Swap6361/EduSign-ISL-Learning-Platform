@@ -1,0 +1,18 @@
+              precision    recall  f1-score   support
+
+        Blue       1.00      1.00      1.00        24
+     Colours       1.00      1.00      1.00        24
+        Grey       1.00      1.00      1.00        24
+      Orange       1.00      1.00      1.00        24
+        Pink       1.00      1.00      1.00        24
+      Purple       1.00      1.00      1.00        24
+         Red       1.00      1.00      1.00        24
+       White       1.00      1.00      1.00        24
+      Yellow       1.00      1.00      1.00        24
+       black       1.00      1.00      1.00        24
+       brown       1.00      1.00      1.00        24
+       green       1.00      1.00      1.00        24
+
+    accuracy                           1.00       288
+   macro avg       1.00      1.00      1.00       288
+weighted avg       1.00      1.00      1.00       288

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Generate Letter Images</title>
+</head>
+<body>
+  <canvas id="canvas" width="300" height="300"></canvas>
+  <script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    
+    const letters = 'ABCDEFGHIKLMNOPQRSTUVWXYZ'.split('');
+    
+    letters.forEach(letter => {
+      // Clear canvas
+      ctx.fillStyle = '#FFE5D9';
+      ctx.fillRect(0, 0, 300, 300);
+      
+      // Draw letter
+      ctx.fillStyle = '#FF8C42';
+      ctx.font = 'bold 150px Arial';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText(letter, 150, 150);
+      
+      // Draw border
+      ctx.strokeStyle = '#FF8C42';
+      ctx.lineWidth = 4;
+      ctx.strokeRect(10, 10, 280, 280);
+      
+      // Download
+      canvas.toBlob(blob => {
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${letter}.png`;
+        a.click();
+      });
+    });
+    
+    alert('Images generated! Check your downloads.');
+  </script>
+</body>
+</html>

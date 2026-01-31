@@ -1,0 +1,13 @@
+              precision    recall  f1-score   support
+
+      Friday       1.00      1.00      1.00        40
+      Monday       1.00      1.00      1.00        40
+    Saturday       1.00      1.00      1.00        40
+      Sunday       1.00      1.00      1.00        40
+    Thursday       1.00      1.00      1.00        40
+     Tuesday       0.98      1.00      0.99        40
+   Wednesday       1.00      0.97      0.99        40
+
+    accuracy                           1.00       280
+   macro avg       1.00      1.00      1.00       280
+weighted avg       1.00      1.00      1.00       280

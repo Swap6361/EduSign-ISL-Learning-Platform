@@ -1,0 +1,24 @@
+/* Stage Image Container */
+.stage-image-container {
+    width: 100%;
+    height: 200px;
+    margin: 16px 0;
+    border-radius: 16px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #FFE5D9 0%, #FFDFD3 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stage-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    transition: transform 0.3s ease;
+}
+
+.stage-card:hover .stage-hero-img {
+    transform: scale(1.05);
+}

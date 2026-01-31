@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Camera Test</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            padding: 50px;
+        }
+        video {
+            border: 2px solid #333;
+            max-width: 640px;
+            width: 100%;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            margin: 20px;
+            cursor: pointer;
+        }
+        .error {
+            color: red;
+            padding: 20px;
+            background: #ffebee;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Camera Test</h1>
+    <button onclick="startCamera()">Start Camera</button>
+    <button onclick="stopCamera()">Stop Camera</button>
+    <br><br>
+    <video id="video" autoplay playsinline></video>
+    <div id="error"></div>
+    <div id="status"></div>
+
+    <script>
+        const video = document.getElementById('video');
+        const errorDiv = document.getElementById('error');
+        const statusDiv = document.getElementById('status');
+        let stream = null;
+
+        async function startCamera() {
+            errorDiv.innerHTML = '';
+            statusDiv.innerHTML = 'Requesting camera...';
+
+            try {
+                stream = await navigator.mediaDevices.getUserMedia({
+                    video: {
+                        width: { ideal: 1280 },
+                        height: { ideal: 720 },
+                        facingMode: 'user'
+                    }
+                });
+
+                video.srcObject = stream;
+                statusDiv.innerHTML = '✅ Camera started successfully!';
+                console.log('Camera stream:', stream);
+                console.log('Video tracks:', stream.getVideoTracks());
+            } catch (err) {
+                console.error('Camera error:', err);
+                errorDiv.innerHTML = `❌ Error: ${err.name} - ${err.message}`;
+                statusDiv.innerHTML = '';
+            }
+        }
+
+        function stopCamera() {
+            if (stream) {
+                stream.getTracks().forEach(track => track.stop());
+                video.srcObject = null;
+                stream = null;
+                statusDiv.innerHTML = 'Camera stopped';
+            }
+        }
+
+        // Check if camera API is available
+        if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+            errorDiv.innerHTML = '❌ Camera API not supported in this browser';
+        } else {
+            statusDiv.innerHTML = '✓ Camera API is available';
+        }
+    </script>
+</body>
+</html>

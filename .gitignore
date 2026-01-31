@@ -1,0 +1,70 @@
+# ==========================================
+# .gitignore for EduSign ISL Platform
+# ==========================================
+
+# ==========================================
+# PYTHON BACKEND
+# ==========================================
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+__pycache__/
+*.py[cod]
+*.so
+.Python
+
+# ==========================================
+# NODE.JS / REACT FRONTEND
+# ==========================================
+# Dependencies (VERY LARGE - must exclude)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+.cache/
+
+# ==========================================
+# TRAINED MODELS (Large .h5 files)
+# ==========================================
+# Your trained models are ~50-100 MB each - too large for GitHub
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.pt
+*.pth
+*.onnx
+
+# ==========================================
+# FIREBASE & SECRETS (CRITICAL - SECURITY)
+# ==========================================
+# NEVER upload these - contains private credentials
+serviceAccountKey.json
+firebase-adminsdk-*.json
+firebase_config.json
+.env
+.env.local
+.env.production
+*.env
+
+# ==========================================
+# IDE & EDITOR FILES
+# ==========================================
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ==========================================
+# LOGS & TEMPORARY FILES
+# ==========================================
+*.log
+logs/
+tmp/
+temp/

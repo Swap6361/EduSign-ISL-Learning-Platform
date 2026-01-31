@@ -1,0 +1,457 @@
+/* ========================================
+   MODERN AUTH PAGE - EDUSIGN+
+   Kid-friendly, Professional, Accessible
+   ======================================== */
+
+.auth-container {
+    display: flex;
+    min-height: 100vh;
+    background: #fff;
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+}
+
+/* ========================================
+   LEFT PANEL - WELCOME SECTION
+   ======================================== */
+
+.auth-left-panel {
+    position: relative;
+    flex: 1;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.auth-welcome-content {
+    position: relative;
+    z-index: 2;
+    max-width: 500px;
+    text-align: center;
+    color: white;
+}
+
+.mascot-welcome {
+    margin-bottom: 30px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.mascot-large {
+    width: 120px;
+    height: 120px;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.2));
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.auth-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    opacity: 0.95;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.auth-description {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.auth-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 12px 20px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.highlight-item:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateX(5px);
+}
+
+.highlight-icon {
+    font-size: 1.5rem;
+}
+
+/* Decorative Elements */
+.auth-decorations {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.decoration-circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.1;
+    background: white;
+}
+
+.decoration-1 {
+    width: 300px;
+    height: 300px;
+    top: -100px;
+    left: -100px;
+}
+
+.decoration-2 {
+    width: 200px;
+    height: 200px;
+    bottom: 50px;
+    right: -50px;
+}
+
+.decoration-3 {
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    left: 10%;
+}
+
+/* ========================================
+   RIGHT PANEL - AUTH FORM
+   ======================================== */
+
+.auth-right-panel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: #f9fafb;
+}
+
+.auth-card {
+    background: white;
+    border-radius: 24px;
+    padding: 48px;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+/* Card Header */
+.auth-card-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.auth-card-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 8px;
+}
+
+.auth-card-subtitle {
+    font-size: 1rem;
+    color: #718096;
+    font-weight: 400;
+}
+
+/* Error Message */
+.auth-error {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 12px;
+    padding: 12px 16px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #dc2626;
+    font-size: 0.875rem;
+}
+
+.error-icon {
+    font-size: 1.25rem;
+}
+
+/* Google Sign In Button */
+.auth-google-btn {
+    width: 100%;
+    padding: 14px 20px;
+    background: white;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #374151;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    position: relative;
+}
+
+.auth-google-btn:hover:not(:disabled) {
+    background: #f9fafb;
+    border-color: #667eea;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+}
+
+.auth-google-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.google-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.google-recommended {
+    display: block;
+    font-size: 0.75rem;
+    color: #9ca3af;
+    font-weight: 400;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+/* Divider */
+.auth-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 40px 0 32px;
+    color: #9ca3af;
+    font-size: 0.875rem;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.auth-divider span {
+    padding: 0 16px;
+}
+
+/* Form */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #374151;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 16px;
+    background: #f9fafb;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    font-size: 1rem;
+    color: #1a202c;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #667eea;
+    background: white;
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+}
+
+.form-input::placeholder {
+    color: #9ca3af;
+}
+
+.form-input:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Submit Button */
+.auth-submit-btn {
+    width: 100%;
+    padding: 14px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 12px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 8px;
+}
+
+.auth-submit-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.auth-submit-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.loading-spinner {
+    display: inline-block;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Toggle Sign In / Sign Up */
+.auth-toggle {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.auth-toggle-btn {
+    background: none;
+    border: none;
+    color: #667eea;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: underline;
+}
+
+.auth-toggle-btn:hover:not(:disabled) {
+    color: #764ba2;
+}
+
+.auth-toggle-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* ========================================
+   RESPONSIVE - MOBILE
+   ======================================== */
+
+@media (max-width: 968px) {
+    .auth-container {
+        flex-direction: column;
+    }
+
+    .auth-left-panel {
+        min-height: 40vh;
+        padding: 40px 20px;
+    }
+
+    .auth-title {
+        font-size: 2rem;
+    }
+
+    .auth-subtitle {
+        font-size: 1rem;
+    }
+
+    .auth-highlights {
+        display: none;
+        /* Hide on mobile for simplicity */
+    }
+
+    .mascot-large {
+        width: 80px;
+        height: 80px;
+    }
+
+    .auth-right-panel {
+        padding: 20px;
+    }
+
+    .auth-card {
+        padding: 32px 24px;
+        border-radius: 20px 20px 0 0;
+        margin-top: -20px;
+    }
+
+    .auth-card-title {
+        font-size: 1.5rem;
+    }
+
+    .google-recommended {
+        position: static;
+        display: block;
+        margin-top: 4px;
+        transform: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .auth-card {
+        padding: 24px 20px;
+    }
+
+    .auth-title {
+        font-size: 1.75rem;
+    }
+}

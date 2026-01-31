@@ -1,0 +1,13 @@
+                                    precision    recall  f1-score   support
+
+            Good morning, everyone       1.00      1.00      1.00        45
+                     How are you _       0.47      0.22      0.30        41
+                         I am fine       0.52      0.78      0.62        45
+I am studying indian sign language       1.00      1.00      1.00        43
+                        My Name is       1.00      1.00      1.00        44
+              What are you doing _       1.00      1.00      1.00        45
+               What is your name _       1.00      1.00      1.00        43
+
+                          accuracy                           0.86       306
+                         macro avg       0.86      0.86      0.85       306
+                      weighted avg       0.86      0.86      0.85       306
