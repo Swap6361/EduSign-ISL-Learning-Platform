@@ -184,16 +184,15 @@ EduSign/
 ### 📥 How to Obtain Missing Files:
 
 1. **Trained Models:** 
-   - 🔗 **[Download from Google Drive]** _(Link to be added)_
    - Required models:
-     - `models_a-z/isl_words_best_26_words.h5` (~XX MB)
-     - `models_days/isl_days_best_*.h5` (~XX MB)
-     - `model_colour/models/isl_words_best_12_words.h5` (~XX MB)
-     - `model_words/model_words1/isl_words_best_24_words.h5` (~XX MB)
-     - `model_words/model_words2/models/static_words_best_16_words.h5` (~XX MB)
-     - `models_sentence/isl_sentences_best.h5` (~XX MB)
+     - `models_a-z/isl_words_best_26_words.h5` 
+     - `models_days/isl_days_best_*.h5` 
+     - `model_colour/models/isl_words_best_12_words.h5` 
+     - `model_words/model_words1/isl_words_best_24_words.h5` 
+     - `model_words/model_words2/models/static_words_best_16_words.h5` 
+     - `models_sentence/isl_sentences_best.h5` 
      - `models_sentence/isl_sentences_final/` (TensorFlow SavedModel folder)
-     - `models_words/isl_words_best_24_words.h5` (~XX MB)
+     - `models_words/isl_words_best_24_words.h5` 
    
 2. **Installation:** After downloading models from Google Drive:
    - Extract/place model files in their respective `backend/models_*/` directories
@@ -211,7 +210,7 @@ EduSign/
 
 ## 🧪 Testing the Application
 
-1. **Download and place trained models** from Google Drive (see above)
+1. **Download and place trained models** from backend, docs and frontend (Repo)
 2. **Set up Firebase credentials** (`.env` for frontend, `serviceAccountKey.json` for backend)
 3. **Install dependencies:**
    ```bash
@@ -233,7 +232,7 @@ EduSign/
 
 ## � Academic Context
 
-This project was developed as part of **MCA Final Year Project** at **[Jain University]**.
+This project was developed as part of **MCA Final Year Project** at **[Chanakya University]**.
 
 ### Key Highlights:
 - ✅ Real-time gesture recognition with **85%+ accuracy**
@@ -245,8 +244,7 @@ This project was developed as part of **MCA Final Year Project** at **[Jain Univ
 
 ### Project Repository:
 - **GitHub:** [https://github.com/ReaganMurgesh/EduSign-ISL-Learning-Platform](https://github.com/ReaganMurgesh/EduSign-ISL-Learning-Platform)
-- **Google Drive (Models & Assets):** _(Link to be added)_
-
+-  **GitHub:** [https://github.com/Swap6361/EduSign-ISL-Learning-Platform](https://github.com/Swap6361/EduSign-ISL-Learning-Platform)
 ---
 
 ## 🛡️ Technologies Used
@@ -267,7 +265,7 @@ This project was developed as part of **MCA Final Year Project** at **[Jain Univ
 - NumPy, OpenCV
 
 ### Machine Learning:
-- CNN (Convolutional Neural Network) for static gestures
+- DNN (Dense Neural Network) for static gestures
 - LSTM (Long Short-Term Memory) for dynamic sequences
 - MediaPipe Hand Landmark Detection (21 points × 3 coordinates)
 
@@ -282,7 +280,8 @@ This project is for academic purposes. Feel free to use for learning and referen
 ## 👥 Contributors
 
 - **Reagan Murgesh** - Developer & Researcher
-- **[Guide Name]** - Project Guide
+- **Swapna K** - Model Training & Evaluation & Researcher
+- **[Guide Name]** - Mr. Ashith Sagar Naidu
 
 ---
 
@@ -291,8 +290,9 @@ This project is for academic purposes. Feel free to use for learning and referen
 For queries regarding **models, datasets, or demo**:
 - 📧 Email: your.email@example.com
 - 🔗 GitHub: [@ReaganMurgesh](https://github.com/ReaganMurgesh)
+- 🔗 GitHub: [@Swapna](https://github.com/Swap6361)
 - 🔗 Repository: [EduSign-ISL-Learning-Platform](https://github.com/ReaganMurgesh/EduSign-ISL-Learning-Platform)
-
+- 🔗 Repository: [EduSign-ISL-Learning-Platform](https://github.com/Swap6361/EduSign-ISL-Learning-Platform)
 ---
 
 ## � Acknowledgments
