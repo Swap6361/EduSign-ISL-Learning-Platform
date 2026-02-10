@@ -1,13 +1,13 @@
-\
-# 🤟 EduSign - Indian Sign Language Learning Platform
+
+#  EduSign - Indian Sign Language Learning Platform
 
 An intelligent, gamified platform for learning Indian Sign Language (ISL) with real-time gesture recognition powered by MediaPipe and CNN.
 
 ![ISL Alphabets](./alphabets-of-Indian-Sign-Language.png)
 
----
 
-## 🚀 Features
+
+##  Features
 
 - **Real-time Hand Recognition** using MediaPipe & TensorFlow
 - **Multiple Learning Stages**:
@@ -25,14 +25,14 @@ An intelligent, gamified platform for learning Indian Sign Language (ISL) with r
 
 ---
 
-## 📋 Prerequisites
+##  Prerequisites
 
 - **Python** 3.8+
 - **Node.js** 16+
 - **Webcam** access
 - **Firebase** account (for authentication)
 
----
+
 
 ## 🛠️ Installation
 
@@ -58,9 +58,9 @@ cd frontend
 npm install
 ```
 
----
 
-## ⚙️ Configuration
+
+##  Configuration
 
 ### 1. Firebase Setup
 
@@ -80,9 +80,9 @@ VITE_FIREBASE_APP_ID=your_app_id
 
 > **Note:** Use `.env.example` as a template for your `.env` file.
 
----
 
-## 🎯 Running the Application
+
+## Running the Application
 
 ### Start Backend
 
@@ -127,9 +127,9 @@ npm run dev
 
 Frontend runs on `http://localhost:5173`
 
----
 
-## 📂 Project Structure
+
+##  Project Structure
 
 ```
 EduSign/
@@ -169,9 +169,9 @@ EduSign/
 └── README.md                       # This file
 ```
 
----
 
-## � Models & Large Files
+
+##  Models & Large Files
 
 > [!IMPORTANT]
 > Due to GitHub's 100 MB file size limit, the following files are **not included** in this repository:
@@ -183,7 +183,7 @@ EduSign/
 - **Firebase credentials** (`serviceAccountKey.json`, `.env` files - for security)
 - **node_modules/** (can be regenerated with `npm install`)
 
-### 📥 How to Obtain Missing Files:
+###  How to Obtain Missing Files:
 
 1. **Trained Models:** 
    - Required models:
@@ -208,9 +208,9 @@ EduSign/
 > [!NOTE]
 > **For Examiners/Evaluators:** The absence of model files does not affect code evaluation. All source code, architecture, and documentation are included. Models can be shared separately if needed for testing.
 
----
 
-## 🧪 Testing the Application
+
+## Testing the Application
 
 1. **Download and place trained models** from backend, docs and frontend (Repo)
 2. **Set up Firebase credentials** (`.env` for frontend, `serviceAccountKey.json` for backend)
@@ -230,9 +230,9 @@ EduSign/
 9. **Make ISL signs** in front of your webcam
 10. **Watch real-time predictions** and progress tracking
 
----
 
-## � Academic Context
+
+##  Academic Context
 
 This project was developed as part of **MCA Final Year Project** at **[Chanakya University]**.
 
@@ -247,9 +247,9 @@ This project was developed as part of **MCA Final Year Project** at **[Chanakya 
 ### Project Repository:
 - **GitHub:** [https://github.com/ReaganMurgesh/EduSign-ISL-Learning-Platform](https://github.com/ReaganMurgesh/EduSign-ISL-Learning-Platform)
 -  **GitHub:** [https://github.com/Swap6361/EduSign-ISL-Learning-Platform](https://github.com/Swap6361/EduSign-ISL-Learning-Platform)
----
 
-## 🛡️ Technologies Used
+
+##  Technologies Used
 
 ### Frontend:
 - React 18 + Vite
@@ -271,23 +271,23 @@ This project was developed as part of **MCA Final Year Project** at **[Chanakya 
 - LSTM (Long Short-Term Memory) for dynamic sequences
 - MediaPipe Hand Landmark Detection (21 points × 3 coordinates)
 
----
 
-## 📝 License
+
+##  License
 
 This project is for academic purposes. Feel free to use for learning and reference.
 
----
 
-## 👥 Contributors
+
+##  Contributors
 
 - **Reagan Murgesh** - Developer & Researcher
 - **Swapna K** - Model Training & Evaluation & Researcher
 - **[Guide Name]** - Mr. Ashith Sagar Naidu
 
----
 
-## 📞 Contact
+
+##  Contact
 
 For queries regarding **models, datasets, or demo**:
 - 📧 Email: (reaganmurgesh@gmail.com)
@@ -296,9 +296,9 @@ For queries regarding **models, datasets, or demo**:
 - 🔗 GitHub: [@Swapna](https://github.com/Swap6361)
 - 🔗 Repository: [EduSign-ISL-Learning-Platform](https://github.com/ReaganMurgesh/EduSign-ISL-Learning-Platform)
 - 🔗 Repository: [EduSign-ISL-Learning-Platform](https://github.com/Swap6361/EduSign-ISL-Learning-Platform)
----
 
-## � Acknowledgments
+
+##  Acknowledgments
 
 - Indian Sign Language Research and Training Centre (ISLRTC)
 - MediaPipe Team by Google
@@ -306,9 +306,9 @@ For queries regarding **models, datasets, or demo**:
 - TensorFlow Team
 - All volunteers who contributed to dataset collection
 
----
 
-## 🚨 Important Notes for Setup
+
+##  Important Notes for Setup
 
 1. **DO NOT** commit `.env` files or Firebase credentials (`serviceAccountKey.json`)
 2. **DO** download trained models from Google Drive before running
@@ -316,9 +316,9 @@ For queries regarding **models, datasets, or demo**:
 4. **Chrome/Edge recommended** for best MediaPipe performance
 5. **Each lesson requires its specific recognition server** to be running
 
----
 
-## 🔧 Troubleshooting
+
+##  Troubleshooting
 
 ### "Module not found" errors
 → Run `pip install -r requirements.txt` in backend folder
@@ -335,13 +335,13 @@ For queries regarding **models, datasets, or demo**:
 ### Low prediction accuracy
 → Ensure good lighting and plain background
 
----
 
-**⭐ If this project helps you, please star the repository!**
 
----
+** If this project helps you, please star the repository!**
 
-## 📊 Project Statistics
+
+
+##  Project Statistics
 
 - **Lines of Code:** ~10,000+
 - **Models Trained:** 7 different gesture recognition models
@@ -350,6 +350,6 @@ For queries regarding **models, datasets, or demo**:
 - **Development Time:** 4 months
 - **Team Size:** 1 developer + project guide
 
----
+
 
 **Made with ❤️ for accessible ISL education**
