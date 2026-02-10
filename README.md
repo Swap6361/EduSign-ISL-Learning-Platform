@@ -34,7 +34,7 @@ An intelligent, gamified platform for learning Indian Sign Language (ISL) with r
 
 
 
-## 🛠️ Installation
+##  Installation
 
 ### Backend Setup
 
