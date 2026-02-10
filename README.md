@@ -1,3 +1,4 @@
+\
 # 🤟 EduSign - Indian Sign Language Learning Platform
 
 An intelligent, gamified platform for learning Indian Sign Language (ISL) with real-time gesture recognition powered by MediaPipe and CNN.
@@ -12,6 +13,7 @@ An intelligent, gamified platform for learning Indian Sign Language (ISL) with r
 - **Multiple Learning Stages**:
   - 🔤 Alphabets (A-Z)
   - 🔢 Numbers
+  - 🔤 A-Z words
   - 🎨 Colors
   - 📅 Days of the Week
   - 💬 General Words
@@ -194,7 +196,7 @@ EduSign/
      - `models_sentence/isl_sentences_final/` (TensorFlow SavedModel folder)
      - `models_words/isl_words_best_24_words.h5` 
    
-2. **Installation:** After downloading models from Google Drive:
+2. **Installation:** After downloading models from backend, docs, frontend (Repository):
    - Extract/place model files in their respective `backend/models_*/` directories
    - Ensure file paths match the structure shown in Google Drive README
 
@@ -288,7 +290,8 @@ This project is for academic purposes. Feel free to use for learning and referen
 ## 📞 Contact
 
 For queries regarding **models, datasets, or demo**:
-- 📧 Email: your.email@example.com
+- 📧 Email: (reaganmurgesh@gmail.com)
+- 📧 Email: (swapnak9900@gmail.com) 
 - 🔗 GitHub: [@ReaganMurgesh](https://github.com/ReaganMurgesh)
 - 🔗 GitHub: [@Swapna](https://github.com/Swap6361)
 - 🔗 Repository: [EduSign-ISL-Learning-Platform](https://github.com/ReaganMurgesh/EduSign-ISL-Learning-Platform)
